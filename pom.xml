@@ -52,6 +52,13 @@
                             <goal>check</goal>
                         </goals>
                     </execution>
+                    <execution>
+                        <id>report</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
                 </executions>
                 <configuration>
                     <rules>
@@ -60,7 +67,7 @@
                                 <limit>
                                     <counter>BRANCH</counter>
                                     <value>COVEREDRATIO</value>
-                                    <minimum>0.75</minimum>
+                                    <minimum>1.0</minimum>
                                 </limit>
                             </limits>
                         </rule>
